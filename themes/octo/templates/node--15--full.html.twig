@@ -1,0 +1,13 @@
+{% set classes = ['landing'] %}
+<article{{attributes.addClass(classes)}}>
+
+	<div class="row">
+		<div class="col-md-6 featured-image">
+			<img alt="Home office" src="{{ file_url(node.field_image.entity.fileuri) }}">
+		</div>
+		<div class="col-md-6 introduction">
+			{{ content.body.0 }}
+		</div>
+	</div>
+
+</article>
